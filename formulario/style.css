@@ -1,0 +1,85 @@
+* {
+    border:border-box;
+    margin:none;
+    padding:none;
+    background-color: #f5f5f5;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width:60%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+h1 {
+    color: #4D4B4B;
+    text-align: center;
+    font-size: 50px;
+}
+
+fieldset {
+    border-radius: 15px;
+    border-width: 10px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+fieldset:nth-child(1) input:not(#birth) {
+    width:  30%;
+}
+
+#salario {
+    width:  30%;
+}
+
+legend {
+    color: #4D4B4B;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 0;
+    color:#aaa;
+}
+
+label {
+    color: #4D4B4B;
+}
+input {
+    border-color: #eee;
+    border-radius: 15px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#confirmar {
+    margin-top: 17px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color:#4D4B4B;
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+    color:#aaa;
+}
+
+@media (max-width: 600px){
+textarea {
+    width: 140px;
+}
+}

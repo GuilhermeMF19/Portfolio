@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+
+        <form action="receber.php" method="post" target="_blank">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="Nome" autofocus />
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="Email" />
+                </div>
+                <br>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="Senha" minlength="8"/>
+                </div>
+                <br>
+                <div>
+                    <label for="confsenha">Confirme a senha:</label>
+                    <input type="password" id="confsenha" name="Senha" />
+                </div>
+                <br>
+                <div>
+                    <label for="birth">Data de nascimento:</label>
+                    <input type="date" id="birth" name="Nascimento" />
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Número:</label>
+                    <input type="text" id="phone" name="Telefone" pattern="[0-9]{11}" maxlength="11" required />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Conhecimentos e experiências</legend>
+                <h2>Conhecimentos:</h2>
+                <div>
+                    <label for="php">Php</label>
+                    <input type="checkbox" id="php" name="Php" value="php" />
+                </div>
+                <div>
+                    <label for="js">Java Script</label>
+                    <input type="checkbox" id="js" name="Js" value="js" />
+                </div>
+                <div>
+                    <label for="py">Python</label>
+                    <input type="checkbox" id="py" name="Py" value="py" />
+                </div>
+                <div>
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="java" name="Java" value="java" />
+                </div>
+                <br>    
+                <div>
+                    <label for="exp">Experiências:</label>
+                    <br>    
+                    <textarea id="exp" rows="6" cols="50" name="Experiências" ></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Opções</legend>
+                <h2>Vagas:</h2>
+                <div>
+                    <label for="tester">Tester</label>
+                    <input type="radio" id="tester" name="Vaga" checked />
+                </div>
+                <div>
+                    <label for="frontend">Front-end</label>
+                    <input type="radio" id="frontend" name="Vaga" />
+                </div>
+                <div>
+                    <label for="backend">Back-end</label>
+                    <input type="radio" id="backend" name="Vaga" />
+                </div>
+                <br>
+                <div>
+                    <label for="salario">Pretensão salarial:</label>
+                    <input type="text" id="salario" name="Salario" pattern="[0-9]{6}" maxlength="6" onclick=""/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termos de uso</legend>
+                <br>
+                <div>
+                    <textarea rows="6" cols="50" name="comments" readonly>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima alias deserunt quod perspiciatis vitae reiciendis minus perferendis voluptatem eveniet excepturi, reprehenderit itaque veniam dolores libero rerum. Cumque totam numquam tempora?</textarea><br />
+                    <label for="confirmar">Confirmar</label>
+                    <input type="checkbox" id="confirmar" name="Confirmar" required />
+                </div>
+                <br>
+                <div>
+                    <input type="submit" id="enviar" value="Enviar" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

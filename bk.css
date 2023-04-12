@@ -1,0 +1,144 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    background-image: url(background.gif);
+}
+
+/* Navbar config */
+nav {
+    margin: auto;
+    background-color: var(--box);
+    border-radius: 50px;
+    width: 30%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    flex-grow: 1;
+    text-align: center;
+    list-style-type: none; 
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Nav links config */
+
+a:any-link {
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center; 
+}
+
+/* Container style */
+.container {   
+    width: 90vw;
+    height: 80vh;
+    /* border: 3px solid rgba(255,255,255, 0.1); */
+}
+
+/* Text */
+
+h1 {
+    margin-left: 20px;
+    color: var(--text);
+}
+
+h5 {
+    margin-left: 20px;
+    color: var(--text);
+}
+
+h3{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 35%;
+    height: 18%;
+    margin-bottom: 0;
+    padding-top: 20px;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--text);
+    background-color: var(--box);
+}
+
+/* Config projects page */
+@media screen and (min-width: 700px){
+.projects {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 65%;
+    height: 60%;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--text);
+    background-color: var(--box);
+}
+
+.projects a:link, a:visited{
+    color: var(--text);
+}
+
+.projects > li {
+    margin: 15px;  
+    padding: 5px;  
+    width: 10%;
+    height: 40%;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--text);
+    background-color: var(--box);
+}
+}
+/* config contact info */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 35%;
+    height: 18%;
+    padding-top: 20px;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--text);
+    background-color: var(--box);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    margin:0;
+    padding:0;
+}
+
+main > p{
+    position: absolute;
+    bottom: -5px;
+    right: 20px;
+    width: 35%;
+    height: 18%;
+    text-align: center; 
+    color: var(--text);
+}
+
