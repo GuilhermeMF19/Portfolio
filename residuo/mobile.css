@@ -1,0 +1,71 @@
+.gallery {
+    width: 104%;
+}
+
+.gallery img{
+    opacity: 1;
+}
+
+.content {
+    width: 104%;
+}
+
+.alternativas-sustentaveis {
+    width: 104%;
+}
+
+.circular-arrow {
+    display: none;
+}
+
+.white-h3 {
+    width: 100%;
+}
+
+h5 {
+    width:100%;
+}
+
+.options img{
+    height: 150px;
+    width: 300px;
+}
+
+@media screen and (max-width: 280px){
+    header{
+        width: 140%;
+    }
+
+    .gallery {
+        width: 140%;
+    }
+
+    .content {
+        width: 140%;
+    }
+
+    .alternativas-sustentaveis {
+        width: 140%;
+    }
+
+    .circular-arrow {
+        display: none;
+    }
+
+    .white-h3 {
+        width: 100%;
+    }
+
+    h5 {
+        width:100%;
+    }
+
+    .options img{
+        height: 150px;
+        width: 300px;
+    }
+
+    footer {
+        width: 140%;
+    }
+}

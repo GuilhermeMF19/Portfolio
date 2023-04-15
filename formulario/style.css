@@ -8,7 +8,7 @@
 
 .container {
     width:60%;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -57,7 +57,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 #confirmar {
@@ -79,7 +79,32 @@ input[type="submit"] {
 }
 
 @media (max-width: 600px){
+* {
+    margin: none;
+    padding: none;
+}
+
 textarea {
     width: 140px;
+}
+}
+
+@media (max-width: 422px) {
+* {
+    margin: none;
+    padding: none;
+}
+
+
+container {
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 100%;
+}
+
+legend {
+    font-size: 15px;
 }
 }
