@@ -115,9 +115,20 @@ header img {
     height: 200px;
   }
 
-  h3{
-    padding:30px;
+  
+/* Desligar ARROW */
+@media screen and (max-width: 1280px) {
+
+
+  .circular-arrow {
+    display: none;
   }
+}
+
+h3{
+  padding:30px;
+}
+
 
 /* Information of options */
 
@@ -126,75 +137,6 @@ h5{
     width: 50%;
 }
 
-.wm-tooltip{
-    position:relative;
-}
-
-.wm-tooltip:after
-{
-    background-color:rgba(62,114,29,255);
-    color: white;
-    box-sizing:border-box;
-    content: attr(data-tooltip);
-    display:none;
-    padding:10px;
-    z-index:3;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.wm-tooltip:hover:after {
-    display:block;
-    color:  rgba(119,179,85,255);
-}
-
-.white-h3 {
-  color: white;
-  background-color: rgba(0,0,0, 0.06);
-  width: 25%;
-  border-radius: 20px;
-}
-
-/* Animation */
-
-.heartbeat {
-	-webkit-animation: heartbeat 1.5s ease infinite;
-	        animation: heartbeat 1.5s ease infinite;
-}
-
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-  }
-}
 
 /* footer */
 footer {

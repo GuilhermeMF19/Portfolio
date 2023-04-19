@@ -1,71 +1,54 @@
-.gallery {
-    width: 104%;
-}
-
-.gallery img{
-    opacity: 1;
-}
-
-.content {
-    width: 104%;
-}
-
-.alternativas-sustentaveis {
-    width: 104%;
-}
-
-.circular-arrow {
-    display: none;
-}
-
-.white-h3 {
-    width: 100%;
-}
-
-h5 {
-    width:100%;
-}
-
-.options img{
-    height: 150px;
-    width: 300px;
-}
-
-@media screen and (max-width: 280px){
-    header{
-        width: 140%;
+    header {
+      height: 8%;
     }
-
+  
+  
+    header img {
+      height: 40px;
+      width: 40px;
+    }
+  
+  
+    /* Primeira section */
     .gallery {
-        width: 140%;
+      height: 200px;
+      width: 100%;
     }
-
-    .content {
-        width: 140%;
+  
+    /* Segunda section */
+    .content{
+      margin: 80px auto;
+      width: 90%;
     }
-
-    .alternativas-sustentaveis {
-        width: 140%;
+  
+  
+    h2{
+      font-size: 20px;
     }
-
-    .circular-arrow {
-        display: none;
+  
+  
+    p{
+      font-size: 16px;
     }
-
-    .white-h3 {
-        width: 100%;
+  
+  
+    /* Terceira section */
+    .icon-container {
+      margin-top: 30px;
     }
-
-    h5 {
-        width:100%;
-    }
-
+  
+  
     .options img{
-        height: 150px;
-        width: 300px;
+      width: 100%;
+      height: auto;
+    }
+  
+  
+    /* Footer */
+    footer {
+      flex-direction: column;
+      height: 100%;
     }
 
-    footer {
-        width: 140%;
-    }
-}
+  
+  
