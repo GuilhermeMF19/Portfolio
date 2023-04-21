@@ -136,3 +136,8 @@ main > p {
   text-align: center; 
   color: var(--text);
 }
+
+
+.projects {
+  margin-top: -50px;
+}
